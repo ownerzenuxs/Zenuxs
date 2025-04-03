@@ -92,6 +92,10 @@ body {
 
 /* Disable .right section on mobile */
 @media (max-width: 768px) {
+  
+  .logo img {
+    height: 45px;
+  }
   .right {
     display: none;
   }
