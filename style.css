@@ -176,3 +176,17 @@ body {
 .song-item:hover {
     background-color: #555;
 }
+
+@media (max-width: 768px) {
+  .song-name {
+    font-size: 14px; /* Smaller text */
+  }
+
+  .musicBtn img {
+    height: 28px; /* Smaller buttons */
+  }
+
+  #progressBar {
+    height: 4px; /* Thinner timeline */
+  }
+}
