@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav navlist">
+      <div class="logo">
+        <img src="logo.svg" alt="Logo">
+      </div>
+      <ul>
+        <li><img src="home.svg">Home</li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="home">
+    <div class="right">
+      <div class="library">
+        <div class="heading">
+          <img src="library.svg">
+          <h2>Your library</h2>
+        </div>
+      </div>
+    </div>
+    <div class="left">
+      <div class="heading">
+        <h2>Playlist</h2>
+      </div>
+      <div class="cardcontainer">
+        <div class="card" data-src="/songs/yalgaar.mp3" data-name="Yalgaar" data-artist="CarryMinati">
+          <img src="/logos/yalgaar.jpg" alt="Yalgaar Cover">
+          <h3>Yalgaar</h3>
+         <span>CarryMinati</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer>
+    <div class="player" id="player">
+      <div class="songName" id="songName">Select a Song</div>
+      <input type="range" id="progressBar" value="0">
+      <div class="musicBtn">
+        <img src="play.svg" id="playPauseBtn">
+      </div>
+      <audio id="audio"></audio>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

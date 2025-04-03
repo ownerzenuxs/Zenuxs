@@ -1,0 +1,177 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Navigation */
+.nav {
+  background-color: #121212;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 60px; /* Fixed height */
+}
+
+.nav img {
+  filter: invert(1);
+}
+
+.logo img {
+  height: 50px;
+  filter: invert(1);
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav ul li {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}
+
+.nav ul li img {
+  width: 34px;
+  height: 34px;
+  margin-right: 8px;
+}
+
+/* Main Layout */
+.home {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1; /* Allows it to take remaining space */
+  height: calc(100vh - 60px - 10vh); /* Adjust height for nav and player */
+  padding: 10px;
+}
+
+/* Left & Right Panels */
+.left, .right {
+  background-color: #121212;
+  border-radius: 6px;
+  overflow-y: auto;
+  padding: 10px;
+  height: 100%; /* Ensures they fill space correctly */
+}
+.heading h2 {
+  font-size: 22px;
+}
+.heading {
+  align-items: center;
+  gap: 8px;
+  filter: invert(1);
+  display: flex;
+}
+
+
+.left {
+  width: 72vw;
+}
+
+.right {
+  width: 25vw;
+}
+
+/* Ensure cards fill left section */
+.cardcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  padding: 10px;
+}
+
+/* Cards */
+.card {
+  gap: 22px;
+  height: 222px;
+  background-color: #252525;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+
+
+.player {
+  justify-content: center;
+  padding-bottom: 18px;
+  border-radius: 18px;
+  height: 10vh;
+  background-color: #121212;
+  color: white;
+  display: none; /* Hide initially */
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+#progressBar {
+  width: 80%;
+  margin-top: 5px;
+}
+
+
+.card:hover {
+  border: 1px solid white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    height: calc(100vh - 60px - 10vh);
+  }
+  .left, .right {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+.musicBtn img {
+  height: 40px;
+  filter: invert(1);
+}
+
+/* Playlist (Right Section) */
+.song-item {
+    background-color: #444;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+    color: white;  /* Ensure text is white */
+    font-weight: bold;
+    text-align: center;
+}
+
+.song-item:hover {
+    background-color: #555;
+}
