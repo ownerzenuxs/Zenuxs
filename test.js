@@ -121,3 +121,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     loadPlaylist();
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById("menu-btn");
+    const library = document.querySelector(".right");
+
+    // Show/hide menu on mobile
+    menuBtn.addEventListener("click", () => {
+        library.classList.toggle("active");
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", (event) => {
+        if (!library.contains(event.target) && event.target !== menuBtn) {
+            library.classList.remove("active");
+        }
+    });
+
+    // Close menu when a song is clicked
+    document.querySelectorAll(".song-item").forEach(song => {
+        song.addEventListener("click", () => {
+            library.classList.remove("active");
+        });
+    });
+});

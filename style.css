@@ -89,6 +89,95 @@ body {
 .right {
   width: 25vw;
 }
+/* Hide library (.right) on mobile */
+@media (max-width: 768px) {
+    .nav {
+      justify-content: right;
+    }
+    .right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background: #222;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        transition: transform 0.3s ease;
+        transform: translateX(100%);
+    }
+
+    .right.active {
+        display: block;
+        transform: translateX(0);
+    }
+
+    /* Style for menu button */
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        background: #444;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1000;
+    }
+}
+#menu-btn {
+    display: none; /* Hide by default */
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+/* Hide menu button by default */
+#menu-btn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 1000;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) { 
+    #menu-btn {
+        display: block; /* Show menu button on mobile */
+    }
+
+    .logo {
+        display: none; /* Hide logo on mobile */
+    }
+
+    .right {
+        display: none; /* Hidden by default */
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background: #222;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        transition: transform 0.3s ease;
+        transform: translateX(100%);
+    }
+
+    .right.active {
+        display: block;
+        transform: translateX(0);
+    }
+}
 
 /* Disable .right section on mobile */
 @media (max-width: 768px) {

@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  
+<head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-   <meta http-equiv="Pragma" content="no-cache" />
-   <meta http-equiv="Expires" content="0" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zenuxs - Music Player</title>
+    <title>Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <button id="menu-btn">☰</button>
   <header>
     <div class="nav navlist">
       <div class="logo">
+        <button id="menu-btn">☰</button>
         <img src="logo.svg" alt="Logo">
       </div>
       <ul>
@@ -51,13 +50,5 @@
     </div>
   </footer>
   <script src="test.js"></script>
-  <script>
-    document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "visible") {
-        location.reload();
-    }
-});
-
-  </script>
 </body>
 </html>
