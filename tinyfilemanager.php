@@ -1,15 +1,4 @@
-<?php
-//Default Configuration
-$CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"theme":"dark"}';
-    '*/.*',       // Hides all dotfiles (hidden files)
-    '*',          // Hides everything by default
-    '!test.js',   // Show test.js
-    '!logos/',    // Show logos folder
-    '!songs/'     // Show songs folder
-];
-   
-    
-    
+<?php   
 //Default Configuration
 $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"theme":"light"}';
 
