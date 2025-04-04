@@ -4,6 +4,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <title>Zenuxs - Music Player</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -50,5 +53,13 @@
     </div>
   </footer>
   <script src="test.js"></script>
+  <script>
+    document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") {
+        location.reload();
+    }
+});
+
+  </script>
 </body>
 </html>
