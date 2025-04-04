@@ -1,6 +1,6 @@
 <?php
- 
- $hidden_files = [
+//Default Configuration
+$CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"theme":"dark"}';
     '*/.*',       // Hides all dotfiles (hidden files)
     '*',          // Hides everything by default
     '!test.js',   // Show test.js
