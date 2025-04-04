@@ -138,18 +138,23 @@ body {
 
 /* Player */
 .player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   justify-content: center;
-  padding-bottom: 18px;
-  border-radius: 18px;
+  border-radius: 18px 18px 0 0;
   height: 10vh;
   background-color: #121212;
   color: white;
-  display: none; /* Hide initially */
+  display: none; /* Hidden until song selected */
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  position: relative;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.6);
 }
+
 
 #progressBar {
   width: 80%;
@@ -189,4 +194,10 @@ body {
   #progressBar {
     height: 4px; /* Thinner timeline */
   }
+}
+
+
+/* Ensure content is not hidden behind player */
+main {
+  padding-bottom: 12vh;
 }
