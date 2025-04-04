@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const songs = [
         { name: "Yalgaar", file: "/songs/yalgaar.mp3", image: "/logos/yalgaar.jpg" },
-        /* { name: "Song 2", file: "/songs/song2.mp3", image: "/logos/song2.jpg" } */
+        { name: "Song 2", file: "/songs/song2.mp3", image: "/logos/song2.jpg" }
     ];
 
     const player = document.getElementById("player");
