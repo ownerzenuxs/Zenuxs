@@ -1,0 +1,10 @@
+{
+    "Generate Song Object": {
+        "prefix": "n.$name",
+        "body": [
+            "{ name: \"${1/(.*)/${1:/capitalize}/}\", file: \"/songs/${1}.mp3\", image: \"/logos/${1}.jpg\" },",
+            "$2"
+        ],
+        "description": "Generate a song object with name, file, and image properties in a single line."
+    }
+}
