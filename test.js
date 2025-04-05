@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     const songs = [
-        { name: "Yalgaar", file: "/songs/yalgaar.mp3", image: "/logos/yalgaar.jpg" },
     ];
 
     const player = document.getElementById("player");
